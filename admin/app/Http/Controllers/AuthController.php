@@ -16,7 +16,7 @@ class AuthController extends Controller
         $user->email=$req->input("email");
         $user->password=Crypt::encryptString($req->input("password"));
         $user->save();
-        $req->session->put("status",true);
+        $req->session()->put("status",true);
         $req->session()->put("username",$req->input("name"));
         return redirect("admin");
 
