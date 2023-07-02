@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Registration Page</title>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <style>
     body {
       font-family: Arial, sans-serif;

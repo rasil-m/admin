@@ -1,7 +1,8 @@
 @extends('Layouts.auth');
 @section('register')
 <h2>Login</h2>
-<form>
+<form form method="POST" action="login">
+  @csrf
   <div class="form-group">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>

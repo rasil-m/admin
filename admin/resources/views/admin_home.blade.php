@@ -1,2 +1,4 @@
 @extends("Layouts.dashbord")
-@section("name","Welcome admin")
+@if (Session::get("status"))
+ @section("name","Welcome ".Session::get("username"));
+@endif
