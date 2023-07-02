@@ -34,3 +34,4 @@ Route::view("register","register");
 Route::post("register","App\Http\Controllers\AuthController@register");
 Route::view("login","login");
 Route::post("login","App\Http\Controllers\AuthController@login");
+Route::post("logout","App\Http\Controllers\AuthController@logout");

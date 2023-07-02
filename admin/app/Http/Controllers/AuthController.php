@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -33,5 +34,11 @@ class AuthController extends Controller
         else{
             return "error";
         }
+    }
+
+    function logout(Request $req)
+    {
+        Session::forget("status");
+        return redirect("/");
     }
 }

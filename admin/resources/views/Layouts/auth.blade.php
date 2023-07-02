@@ -53,6 +53,13 @@
     .form-group button:hover {
       background-color: #45a049;
     }
+    a
+    {
+      text-decoration: none;
+      color: #003cff;
+      padding: 2rem;
+      margin: 1rem 0 0 3rem;
+    }
   </style>
 </head>
 <body>

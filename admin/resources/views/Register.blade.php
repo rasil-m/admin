@@ -18,5 +18,6 @@
   <div class="form-group">
     <button type="submit">Register</button>
   </div>
+  <a href="login">Try Login</a>
 </form>
 @endsection

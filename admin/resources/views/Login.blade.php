@@ -14,5 +14,6 @@
   <div class="form-group">
     <button type="submit">Login</button>
   </div>
+  <a href="register">Create new account</a>
 </form>
 @endsection

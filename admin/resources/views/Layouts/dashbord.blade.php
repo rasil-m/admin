@@ -65,6 +65,15 @@
       background-color: #999;
       color: #fff;
     }
+    button
+    {
+      outline: none;
+      border: none;
+      background: #ff0000;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
   </style>
 </head>
 <body>
@@ -80,6 +89,12 @@
         <li><a href="/product">Products</a></li>
         <li><a href="/order">Orders</a></li>
         <li><a href="/settings">Settings</a></li>
+        <li>
+          <form action="logout" method="POST">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+        </li>
       </ul>
     </aside>
 
